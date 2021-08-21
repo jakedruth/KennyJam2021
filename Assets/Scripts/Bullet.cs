@@ -26,6 +26,19 @@ public class Bullet : MonoBehaviour
             return;
         }
 
-        transform.position += transform.up * speed * Time.deltaTime;
+        float stepLength = speed * Time.deltaTime;
+        Vector3 step = transform.up * stepLength;
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, step.normalized, stepLength);
+        if (hit.collider != null)
+        {
+            Debug.Log($"Hit {hit.collider.name}");
+            if (hit.collider.name == "Player")
+            {
+
+            }
+        }
+
+        transform.position += step;
     }
 }
