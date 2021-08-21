@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PlayerShipController : MonoBehaviour
 {
+    public Transform bulletSpawnPoint;
     public float speed;
     public float turnRadius;
     public Vector3 turnPoint { get; private set; }
     private int _direction;
     public KeyCode shootKey;
+    public string bulletPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +38,7 @@ public class PlayerShipController : MonoBehaviour
 
     void Fire()
     {
-        Debug.Log("Fire");
+        Instantiate(Resources.Load<Bullet>($"Prefabs/Bullets/{bulletPrefab}"), bulletSpawnPoint.position, bulletSpawnPoint.rotation);
     }
 
     void TurnDirection()

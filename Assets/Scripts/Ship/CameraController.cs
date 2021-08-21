@@ -5,7 +5,10 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     private PlayerShipController _player;
-    public float cameraSpeed;
+    public float minCameraSpeed;
+    public float maxCameraSpeed;
+    public float minDistance;
+    public float maxDistance;
 
     void Awake()
     {
@@ -17,7 +20,11 @@ public class CameraController : MonoBehaviour
     {
         if (_player != null)
         {
-            transform.position = Vector3.Lerp(transform.position, _player.turnPoint, cameraSpeed * Time.deltaTime);
+            Vector3 displacement = _player.turnPoint - transform.position;
+            float sqrDist = displacement.sqrMagnitude;
+            float t = Mathf.InverseLerp(minDistance * minDistance, maxDistance * maxDistance, sqrDist);
+            float speed = Mathf.Lerp(minCameraSpeed, maxCameraSpeed, Mathf.Clamp01(t));
+            transform.position = Vector3.Lerp(transform.position, _player.turnPoint, speed * Time.deltaTime);
         }
     }
 
