@@ -33,10 +33,6 @@ public class Bullet : MonoBehaviour
         if (hit.collider != null)
         {
             Debug.Log($"Hit {hit.collider.name}");
-            if (hit.collider.name == "Player")
-            {
-
-            }
         }
 
         transform.position += step;
