@@ -3,26 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Astroid : MonoBehaviour
+public class Asteroid : MonoBehaviour
 {
-    public RangedFloat speedRange;
-    private Vector2 _velocity;
-
+    private Vector3 _velocity;
     public RangedFloat rotationSpeedRange;
     private float _rotationSpeed;
     public float health;
 
-    public AstroidDestroyedEvent onAstroidDestroyed { get; set; }
+    public AstroidDestroyedEvent onAstroidDestroyed = new AstroidDestroyedEvent();
 
     void Awake()
     {
-        //* Temp debug code to get movement working
-        Vector3 playerPos = FindObjectOfType<PlayerShipController>().transform.position;
-        Vector3 displacement = playerPos - transform.position;
-
-        SetMovementDireciton(displacement);
-        /* */
-
         _rotationSpeed = rotationSpeedRange.GetRandomValue;
     }
 
@@ -30,13 +21,13 @@ public class Astroid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, 0, _rotationSpeed * Time.deltaTime);
+        transform.Rotate(Vector3.forward, _rotationSpeed * Time.deltaTime);
         transform.Translate(_velocity * Time.deltaTime, Space.World);
     }
 
-    void SetMovementDireciton(Vector3 direction)
+    public void SetVelocity(Vector3 velocity)
     {
-        _velocity = direction.normalized * speedRange.GetRandomValue;
+        _velocity = velocity;
     }
 
     public void TakeDamage(float amount)
@@ -54,4 +45,4 @@ public class Astroid : MonoBehaviour
     }
 }
 
-public class AstroidDestroyedEvent : UnityEvent<Astroid> { }
+public class AstroidDestroyedEvent : UnityEvent<Asteroid> { }

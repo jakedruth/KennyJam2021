@@ -83,6 +83,16 @@ public class PlayerShipController : MonoBehaviour
     {
         onShipDestroyedEvent?.Invoke(this);
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        // If the other object is a asteroid, take damage
+        if (other.gameObject.tag.Contains("Asteroid"))
+        {
+            TakeDamage(1);
+            Destroy(other.gameObject);
+        }
+    }
 }
 
 public class OnShipDestroyedEvent : UnityEvent<PlayerShipController> { }
