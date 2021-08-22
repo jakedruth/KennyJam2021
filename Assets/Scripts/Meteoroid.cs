@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class Meteoroid : MonoBehaviour
 {
-
-    public float minSpeed;
-    public float maxSpeed;
+    public RangedFloat speedRange;
     private Vector2 _velocity;
 
-    public float minRotationSpeed;
-    public float maxRotationSpeed;
+    public RangedFloat rotationSpeedRange;
     private float _rotationSpeed;
 
     void Awake()
     {
-        _velocity = Random.insideUnitCircle * Random.Range(minSpeed, maxSpeed);
-        _rotationSpeed = Random.Range(minRotationSpeed, maxRotationSpeed);
+        //* Temp debug code to get movement working
+        Vector3 playerPos = FindObjectOfType<PlayerShipController>().transform.position;
+        Vector3 displacement = playerPos - transform.position;
+
+        SetMovementDireciton(displacement);
+        /* */
+
+        _rotationSpeed = rotationSpeedRange.GetRandomValue;
     }
 
 
@@ -25,5 +28,10 @@ public class Meteoroid : MonoBehaviour
     {
         transform.Rotate(0, 0, _rotationSpeed * Time.deltaTime);
         transform.Translate(_velocity * Time.deltaTime, Space.World);
+    }
+
+    void SetMovementDireciton(Vector3 direction)
+    {
+        _velocity = direction.normalized * speedRange.GetRandomValue;
     }
 }

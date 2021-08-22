@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerShipController : MonoBehaviour
 {
     public Transform bulletSpawnPoint;
-    public float speed;
+    public float angularVelocity;
     public float turnRadius;
     public Vector3 turnPoint { get; private set; }
     private int _direction;
@@ -24,7 +24,7 @@ public class PlayerShipController : MonoBehaviour
     void Update()
     {
         // Update Position
-        transform.RotateAround(turnPoint, Vector3.forward, speed * -_direction * Time.deltaTime);
+        transform.RotateAround(turnPoint, Vector3.forward, angularVelocity * -_direction * Time.deltaTime);
 
         // Handle Input
         if (Input.GetKeyDown(shootKey))
