@@ -7,6 +7,7 @@ public class PlayerShipController : MonoBehaviour
 {
     [Header("Required Transforms")]
     public Transform bulletSpawnPoint;
+    public AudioSource fireAudioSource;
 
     [Header("Player Ship Properties")]
     public float maxHP;
@@ -54,6 +55,7 @@ public class PlayerShipController : MonoBehaviour
     {
         // Create a new bullet
         Instantiate(Resources.Load<Bullet>($"Prefabs/Bullets/{bulletPrefab}"), bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        fireAudioSource.PlayOneShot(fireAudioSource.clip);
     }
 
     void ChangeDirection()
