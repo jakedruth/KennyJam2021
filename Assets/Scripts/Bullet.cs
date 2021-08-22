@@ -32,6 +32,17 @@ public class Bullet : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, step.normalized, stepLength);
         if (hit.collider != null)
         {
+            switch (hit.collider.tag)
+            {
+                case "Astroid":
+                    hit.collider.SendMessage("TakeDamage", damage);
+                    Destroy(gameObject);
+                    break;
+                case "Player":
+                    break;
+                default:
+                    break;
+            }
             Debug.Log($"Hit {hit.collider.name}");
         }
 
