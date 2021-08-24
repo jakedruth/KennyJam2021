@@ -4934,6 +4934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3077141137807519723}
+  - component: {fileID: 5315013604732494736}
   - component: {fileID: 3077141137807519722}
   - component: {fileID: 3077141137807519721}
   - component: {fileID: 3077141137807519720}
@@ -4962,6 +4963,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5315013604732494736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3077141137807519719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1baa6a74e8e512f48b80751cff62d52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 0
+  maxHP: 3
 --- !u!114 &3077141137807519722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4977,8 +4992,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 3077141136832750235}
   fireAudioSource: {fileID: 3077141137836119084}
   speed: 2
-  turnSpeed: 10
-  maxHP: 3
+  turnSpeed: 25
   persueRange: 10
   bulletPrefab: bullet_enemy
   fireRange: 10

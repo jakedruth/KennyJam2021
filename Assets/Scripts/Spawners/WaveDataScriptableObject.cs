@@ -6,12 +6,30 @@ using UnityEngine;
 public class WaveDataScriptableObject : ScriptableObject
 {
     public List<SpawnDataScriptableObject> spawnDataList;
+    public WaveWeightPair[] addWeightsOnDestroyed;
 
     public void SpawnWave(Vector3 center, SpawnManager manager)
     {
         foreach (SpawnDataScriptableObject spawnData in spawnDataList)
         {
-            spawnData.SpawnGameObject(manager, this, center);
+            // Spawn an actor
+            Actor actor = spawnData.SpawnActor(manager, this, center);
+
+            // Add an on death event
+            if (addWeightsOnDestroyed.Length != 0)
+            {
+                actor.onActorDeath.AddListener((actor, args) =>
+                    { manager.AddWeight(addWeightsOnDestroyed); });
+            }
         }
     }
+}
+
+[System.Serializable]
+public class WaveWeightPair
+{
+    [SerializeField]
+    public WaveDataScriptableObject waveData;
+    [SerializeField]
+    public int weight;
 }

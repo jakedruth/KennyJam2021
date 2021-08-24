@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class SpawnManager : MonoBehaviour
 {
     public WaveDataScriptableObject[] spawnWaveData;
-    public int[] _spawnWeights;
+    public Dictionary<WaveDataScriptableObject, int> _spawnWeights = new Dictionary<WaveDataScriptableObject, int>();
     public string initialWeights;
 
     public float spawnInterval;
@@ -13,11 +14,42 @@ public class SpawnManager : MonoBehaviour
 
     private void Awake()
     {
-        _spawnWeights = new int[spawnWaveData.Length];
+        foreach (WaveDataScriptableObject waveData in spawnWaveData)
+        {
+            _spawnWeights.Add(waveData, 0);
+        }
+
         AddWeight(initialWeights);
     }
 
-    public bool AddWeight(string weights)
+    public void AddWeight(params WaveWeightPair[] pairs)
+    {
+        foreach (WaveWeightPair pair in pairs)
+        {
+            AddWeight(pair.waveData, pair.weight);
+        }
+    }
+
+    public void AddWeight(WaveDataScriptableObject waveData, int weight)
+    {
+        if (_spawnWeights.ContainsKey(waveData))
+        {
+            _spawnWeights[waveData] += weight;
+        }
+        else
+        {
+            Debug.Log($"Added Wave Data Key to weights [{waveData.name}]");
+            _spawnWeights.Add(waveData, weight);
+        }
+
+        // Make sure the weight is above 0
+        if (_spawnWeights[waveData] < 0)
+        {
+            _spawnWeights[waveData] = 0;
+        }
+    }
+
+    private bool AddWeight(string weights)
     {
         string[] splitWeights = weights.Split(' ');
         foreach (string w in splitWeights)
@@ -30,7 +62,8 @@ public class SpawnManager : MonoBehaviour
 
                 if (id >= 0 && id < spawnWaveData.Length)
                 {
-                    _spawnWeights[id] += weight;
+                    KeyValuePair<WaveDataScriptableObject, int> kvp = _spawnWeights.ToList()[id];
+                    _spawnWeights[kvp.Key] += weight;
                     return true;
                 }
                 else
@@ -45,46 +78,42 @@ public class SpawnManager : MonoBehaviour
         return false;
     }
 
-    private int GetRandomWaveIndex()
+    private WaveDataScriptableObject GetRandomWave()
     {
         // Calculate the sum of all weights
         int sumOfWeights = 0;
-        for (int i = 0; i < _spawnWeights.Length; i++)
+        foreach (KeyValuePair<WaveDataScriptableObject, int> kvp in _spawnWeights)
         {
-            int weight = _spawnWeights[i];
-            if (weight > 0)
-                sumOfWeights += weight;
+            if (kvp.Value > 0)
+                sumOfWeights += kvp.Value;
         }
 
         if (sumOfWeights <= 0)
         {
             Debug.LogError($"No spawn weights defined, Sum of wieghts equals {sumOfWeights}");
-            return 0;
+            return spawnWaveData[0];
         }
 
         // get a random number between 0 and the sum of all weights
         int randomNum = Random.Range(0, sumOfWeights);
         // find the index of the first weight that is greater than the random number
         int count = 0;
-        for (int i = 0; i < _spawnWeights.Length; i++)
+        foreach (KeyValuePair<WaveDataScriptableObject, int> kvp in _spawnWeights)
         {
-            count += _spawnWeights[i];
+            count += kvp.Value;
             if (count > randomNum)
             {
-                return i;
+                return kvp.Key;
             }
         }
 
         // fail safe
         Debug.LogWarning($"Unable to find a Spawn Wave Index with random number [{randomNum}]");
-        return 0;
+        return spawnWaveData[0];
     }
 
-    public void SpawnWave(int index)
+    public void SpawnWave(WaveDataScriptableObject waveData)
     {
-        // Get the wave data
-        WaveDataScriptableObject waveData = spawnWaveData[index];
-
         // calculate the spawn position relative to the player.turnpoint
         Vector3 pos = PlayerShipController.Instance.turnPoint;
 
@@ -94,14 +123,14 @@ public class SpawnManager : MonoBehaviour
 
     void Update()
     {
-        // spawn an asteroid every spawn interval
+        // spawn an wave of actors every spawn interval
         if (_spawnTimer >= spawnInterval)
         {
             // get a random wave index
-            int index = GetRandomWaveIndex();
+            WaveDataScriptableObject wave = GetRandomWave();
 
-            // spawn an asteroid
-            SpawnWave(index);
+            // spawn an wave
+            SpawnWave(wave);
 
             // reset the timer
             _spawnTimer -= spawnInterval;

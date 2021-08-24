@@ -3,19 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(Actor))]
 public class Asteroid : MonoBehaviour
 {
+    public Actor actor { get; private set; }
     private Vector3 _velocity;
     public RangedFloat angularVelocityRange;
     private float _angularVelocity;
     public int maxHP;
     public int currentHP { get; private set; }
 
-
-    public AstroidDestroyedEvent onAstroidDestroyed = new AstroidDestroyedEvent();
-
     void Awake()
     {
+        actor = GetComponent<Actor>();
+        actor.onActorDeath.AddListener((actor, sourceOfDeath) =>
+        {
+            if (sourceOfDeath == null || (sourceOfDeath != null && actor != sourceOfDeath))
+            {
+                HUD.instance.AddScore(actor.maxHP);
+            }
+        });
+
         _angularVelocity = angularVelocityRange.GetRandomValue();
         currentHP = maxHP;
     }
@@ -27,11 +35,15 @@ public class Asteroid : MonoBehaviour
         transform.Translate(_velocity * Time.deltaTime, Space.World);
 
         const float MAX_DISTANCE = 45f;
-        float sqrDistToPlayer = Vector3.SqrMagnitude(transform.position - PlayerShipController.Instance.transform.position);
-        if (sqrDistToPlayer > MAX_DISTANCE * MAX_DISTANCE)
+
+        if (PlayerShipController.Instance != null)
         {
-            Debug.Log("Here");
-            Destroy(gameObject);
+            float sqrDistToPlayer = Vector3.SqrMagnitude(transform.position - PlayerShipController.Instance.transform.position);
+            if (sqrDistToPlayer > MAX_DISTANCE * MAX_DISTANCE)
+            {
+                Debug.Log("Here");
+                actor.Die();
+            }
         }
     }
 
@@ -39,21 +51,4 @@ public class Asteroid : MonoBehaviour
     {
         _velocity = velocity;
     }
-
-    public void TakeDamage(int amount)
-    {
-        maxHP -= amount;
-        if (maxHP <= 0)
-        {
-            FindObjectOfType<HUD>().AddScore(maxHP);
-            Destroy(gameObject);
-        }
-    }
-
-    public void OnDestroy()
-    {
-        onAstroidDestroyed?.Invoke(this);
-    }
 }
-
-public class AstroidDestroyedEvent : UnityEvent<Asteroid> { }

@@ -5,25 +5,31 @@ using UnityEngine;
 
 public class HUD : MonoBehaviour
 {
+    public static HUD instance;
     public HealthMeter healthMeter;
     public TMPro.TMP_Text scoreText;
     private int score;
 
-    private PlayerShipController _player;
+    private Actor _player;
+
+    void Awake()
+    {
+        instance = this;
+    }
 
     public void Start()
     {
-        _player = FindObjectOfType<PlayerShipController>();
+        _player = FindObjectOfType<PlayerShipController>().actor;
         SetCurrentHealth(_player.maxHP);
-        _player.onShipHitEvent.AddListener(OnShipHit);
+        _player.onActorHit.AddListener(OnShipHit);
         SetScoreText(score);
     }
 
-    private void OnShipHit(object ship, int damgage)
+    private void OnShipHit(Actor ship, object arg)
     {
-        if (ship != null && ship is PlayerShipController == _player)
+        if (ship != null && ship == _player)
         {
-            SetCurrentHealth(_player.currentHP);
+            SetCurrentHealth(ship.currentHP);
         }
     }
 

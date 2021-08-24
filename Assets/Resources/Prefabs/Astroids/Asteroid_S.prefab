@@ -91,8 +91,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6614321679539525666}
-  - component: {fileID: 4679359595033783550}
+  - component: {fileID: 2283489525551094145}
   - component: {fileID: 7772821875944064577}
+  - component: {fileID: 4679359595033783550}
   m_Layer: 0
   m_Name: Asteroid_S
   m_TagString: Asteroid
@@ -115,22 +116,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &4679359595033783550
-CircleCollider2D:
+--- !u!114 &2283489525551094145
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3450486278733339441}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.475
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1baa6a74e8e512f48b80751cff62d52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 0
+  maxHP: 1
 --- !u!114 &7772821875944064577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,3 +146,19 @@ MonoBehaviour:
     minimum: 30
     maximum: 60
   maxHP: 1
+--- !u!58 &4679359595033783550
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450486278733339441}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.475

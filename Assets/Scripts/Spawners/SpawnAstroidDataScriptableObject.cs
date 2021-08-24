@@ -9,12 +9,11 @@ public class SpawnAstroidDataScriptableObject : SpawnDataScriptableObject
     public RangedFloat speedRange;
     public RangedFloat angledOffsetRange;
     public bool addMirroredOffset;
-    public string addWeightsOnDestroyed;
 
-    public override GameObject SpawnGameObject(SpawnManager manager, WaveDataScriptableObject waveData, Vector3 center, params object[] args)
+    public override Actor SpawnActor(SpawnManager manager, WaveDataScriptableObject waveData, Vector3 center, params object[] args)
     {
-        GameObject gameObject = base.SpawnGameObject(manager, waveData, center, args);
-        Asteroid asteroid = gameObject.GetComponent<Asteroid>();
+        Actor actor = base.SpawnActor(manager, waveData, center, args);
+        Asteroid asteroid = actor.GetComponent<Asteroid>();
         if (asteroid != null)
         {
             // Apply rotational offset
@@ -36,20 +35,8 @@ public class SpawnAstroidDataScriptableObject : SpawnDataScriptableObject
 
             // set the velocity
             asteroid.SetVelocity(velocity);
-
-            // Add Listener
-            if (!string.IsNullOrEmpty(addWeightsOnDestroyed))
-            {
-                asteroid.onAstroidDestroyed.AddListener((args) =>
-                {
-                    if (!manager.AddWeight(addWeightsOnDestroyed))
-                    {
-                        Debug.Log($"This [{this}:{this.name}] sent bad weights", this);
-                    }
-                });
-            }
         }
 
-        return gameObject;
+        return actor;
     }
 }

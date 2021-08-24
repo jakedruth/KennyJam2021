@@ -3,20 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(Actor))]
 public class PlayerShipController : MonoBehaviour
 {
     public static PlayerShipController Instance;
+    public Actor actor { get; private set; }
 
     [Header("Required Transforms")]
     public Transform bulletSpawnPoint;
     public AudioSource fireAudioSource;
-
-    [Header("Player Ship Properties")]
-    public int maxHP;
-    public int currentHP { get; private set; }
-
-    public OnShipHitEvent onShipHitEvent { get; set; } = new OnShipHitEvent();
-    public OnShipDestroyedEvent onShipDestroyedEvent { get; set; } = new OnShipDestroyedEvent();
 
     [Header("Movement Variables")]
     public float angularVelocity;
@@ -31,9 +26,8 @@ public class PlayerShipController : MonoBehaviour
     void Awake()
     {
         Instance = this;
-
-        // Set up intial health
-        currentHP = maxHP;
+        actor = GetComponent<Actor>();
+        actor.isPlayer = true;
 
         // Set the initial direction
         _direction = -1;
@@ -57,7 +51,8 @@ public class PlayerShipController : MonoBehaviour
     void Fire()
     {
         // Create a new bullet
-        Instantiate(Resources.Load<Bullet>($"Prefabs/Bullets/{bulletPrefab}"), bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        Bullet bullet = Instantiate(Resources.Load<Bullet>($"Prefabs/Bullets/{bulletPrefab}"), bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        bullet._owner = actor;
         fireAudioSource.PlayOneShot(fireAudioSource.clip);
     }
 
@@ -70,35 +65,15 @@ public class PlayerShipController : MonoBehaviour
         turnPoint = transform.position + transform.right * _direction * turnRadius;
     }
 
-    public void TakeDamage(int amount)
-    {
-        // Handle damage
-        currentHP -= amount;
-        onShipHitEvent?.Invoke(this, amount);
-
-        // If health is 0, destroy the object
-        if (currentHP <= 0)
-        {
-            // Destroy the ship
-            Destroy(gameObject);
-        }
-    }
-
-    public void Destroy()
-    {
-        onShipDestroyedEvent?.Invoke(this);
-    }
-
     private void OnCollisionEnter2D(Collision2D other)
     {
-        // If the other object is a asteroid, take damage
+        // If the other object is a asteroid
+        // take damage and destroy the asteroid
         if (other.gameObject.tag.Contains("Asteroid"))
         {
-            TakeDamage(1);
-            Destroy(other.gameObject);
+            Actor otherActor = other.gameObject.GetComponent<Actor>();
+            actor.TakeDamage(Mathf.CeilToInt(otherActor.currentHP / 2f), otherActor);
+            otherActor.Die();
         }
     }
 }
-
-public class OnShipDestroyedEvent : UnityEvent<object> { }
-public class OnShipHitEvent : UnityEvent<object, int> { }

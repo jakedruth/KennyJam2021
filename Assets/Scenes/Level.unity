@@ -1218,7 +1218,7 @@ Transform:
   - {fileID: 519420032}
   - {fileID: 631066386}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &808099900
 GameObject:
@@ -1784,7 +1784,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1338684902
 GameObject:
@@ -1815,7 +1815,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1338684904
 MonoBehaviour:
@@ -2056,55 +2056,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609283882}
   m_CullTransparentMesh: 1
---- !u!1 &1864677723
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1864677725}
-  - component: {fileID: 1864677724}
-  m_Layer: 0
-  m_Name: AsteroidSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1864677724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1864677723}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0368eca36e1461546a4d2b16943eb79d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  asteroidDifficulties:
-  - {fileID: 11400000, guid: d6ecc514755c477499f9b95d811df097, type: 2}
-  - {fileID: 11400000, guid: 8b0dbccb80cc21a4f9df7147c056cd59, type: 2}
-  spawnWeights: 
-  initialWeights: 0:10 1:1
-  spawnInterval: 3
---- !u!4 &1864677725
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1864677723}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2007465091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2232,6 +2183,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnWaveData:
   - {fileID: 11400000, guid: e626aa1bc88e37345a11903a1f80073f, type: 2}
+  - {fileID: 11400000, guid: 977388f8a20bda64192c1ceb82143d74, type: 2}
+  - {fileID: 11400000, guid: e24687fe731e3e04e87a7380c4a6b6f5, type: 2}
+  - {fileID: 11400000, guid: 705ce497225c6a2449a4fecf2a323579, type: 2}
+  - {fileID: 11400000, guid: 577f148e38212a240bf43a9e3d91e59e, type: 2}
+  - {fileID: 11400000, guid: f9ec5c4a4bd168a4095cd236bf3da58c, type: 2}
   initialWeights: 0:10
   spawnInterval: 3
 --- !u!4 &2131129071
@@ -2246,7 +2202,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3077141138882186416
 PrefabInstance:
@@ -2261,7 +2217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3077141137807519723, guid: 50a84f4f4b429734d9a8380520cdedd6, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3077141137807519723, guid: 50a84f4f4b429734d9a8380520cdedd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2314,7 +2270,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5011151776296563568, guid: 01dbc284e273808439d4083fa2c972dc, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5011151776296563568, guid: 01dbc284e273808439d4083fa2c972dc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2355,6 +2311,10 @@ PrefabInstance:
     - target: {fileID: 5011151776296563568, guid: 01dbc284e273808439d4083fa2c972dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011151776296563569, guid: 01dbc284e273808439d4083fa2c972dc, type: 3}
+      propertyPath: turnRadius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5011151776296563571, guid: 01dbc284e273808439d4083fa2c972dc, type: 3}
       propertyPath: m_Name

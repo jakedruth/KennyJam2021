@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Actor))]
 public class EnemyShipController : MonoBehaviour
 {
+    public Actor actor { get; private set; }
+
     [Header("Required Transforms")]
     public Transform bulletSpawnPoint;
     public AudioSource fireAudioSource;
@@ -13,11 +16,10 @@ public class EnemyShipController : MonoBehaviour
     public float turnSpeed;
 
     [Header("Ship Settings")]
-    public int maxHP;
-    public int currentHP { get; private set; }
     public float persueRange;
-    public OnShipHitEvent onShipHitEvent { get; set; } = new OnShipHitEvent();
-    public OnShipDestroyedEvent onShipDestroyedEvent { get; set; } = new OnShipDestroyedEvent();
+    private Vector2 _playerPos;
+    private Vector2 _displacement;
+    private Vector2 _direction;
 
     [Header("Laser variables")]
     public string bulletPrefab;
@@ -30,30 +32,42 @@ public class EnemyShipController : MonoBehaviour
     private float _fireTimer;
 
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        //_velocity = Vector3.up * speed;
-        currentHP = maxHP;
+        actor = GetComponent<Actor>();
+        actor.onActorDeath.AddListener((actor, sourceOfDeath) =>
+        {
+            Actor other = sourceOfDeath as Actor;
+            if (sourceOfDeath == null || (sourceOfDeath != null && actor != sourceOfDeath))
+            {
+                HUD.instance.AddScore(actor.maxHP);
+            }
+        });
     }
 
     // Update is called once per frame
     void Update()
     {
         // Calculate the player data
-        Vector2 playerPos = PlayerShipController.Instance.transform.position;
-        Vector2 displacement = playerPos - (Vector2)transform.position;
-        Vector2 direction = displacement.normalized;
+        if (PlayerShipController.Instance != null)
+        {
+            _playerPos = PlayerShipController.Instance.transform.position;
+        }
+
+        // calculate the displacement to the player
+        _displacement = _playerPos - (Vector2)transform.position;
+        _direction = _displacement.normalized;
 
         // Rotate the ship if in range of the player
-        if (displacement.sqrMagnitude < persueRange * persueRange)
-            HandleRotation(direction);
+        if (_displacement.sqrMagnitude < persueRange * persueRange)
+            HandleRotation(_direction);
 
         // Handle Movement
         HandleMovement();
 
         // Handle Fire Logic
-        HandleFire(displacement, direction);
+        HandleFire();
+
     }
 
     void HandleRotation(Vector2 input)
@@ -69,17 +83,17 @@ public class EnemyShipController : MonoBehaviour
         transform.position += transform.up * speed * Time.deltaTime;
     }
 
-    void HandleFire(Vector2 displacementToTarget, Vector2 directionToTarget)
+    void HandleFire()
     {
         _fireTimer += Time.deltaTime;
         if (!isFiring && _fireTimer >= fireInterval)
         {
             // Check to see if the target is in range
-            float sqrDistance = displacementToTarget.sqrMagnitude;
+            float sqrDistance = _displacement.sqrMagnitude;
             if (sqrDistance < fireRange * fireRange)
             {
                 // Check to see if the target is infront of the ship
-                float dotProdcut = Vector2.Dot(directionToTarget, bulletSpawnPoint.up);
+                float dotProdcut = Vector2.Dot(_direction, bulletSpawnPoint.up);
                 if (dotProdcut >= 0.5f)
                 {
                     // Start Firing
@@ -109,46 +123,30 @@ public class EnemyShipController : MonoBehaviour
     void Fire()
     {
         // Create a new bullet
-        Instantiate(Resources.Load<Bullet>($"Prefabs/Bullets/{bulletPrefab}"), bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        Bullet bullet = Instantiate(Resources.Load<Bullet>($"Prefabs/Bullets/{bulletPrefab}"), bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        bullet._owner = actor;
         fireAudioSource.PlayOneShot(fireAudioSource.clip);
-    }
-
-    public void TakeDamage(int amount)
-    {
-        // Handle damage
-        currentHP -= amount;
-        onShipHitEvent?.Invoke(this, amount);
-
-        // If health is 0, destroy the object
-        if (currentHP <= 0)
-        {
-            // Destroy the ship
-            FindObjectOfType<HUD>().AddScore(maxHP);
-            Destroy(gameObject);
-        }
-    }
-
-    public void Destroy()
-    {
-        onShipDestroyedEvent?.Invoke(this);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         string tag = other.gameObject.tag;
-        // If the other object is a asteroid, take damage
-        switch (tag)
+        Actor otherActor = other.gameObject.GetComponent<Actor>();
+        if (otherActor != null)
         {
-            case "Asteroid":
-                TakeDamage(1);
-                other.gameObject.SendMessage("TakeDamage", int.MaxValue);
-                break;
-            case "Player":
-                TakeDamage(maxHP);
-                other.gameObject.SendMessage("TakeDamage", 3);
-                break;
-            default:
-                break;
+            switch (tag)
+            {
+                case "Asteroid":
+                    actor.TakeDamage(otherActor.currentHP, otherActor);
+                    otherActor.Die();
+                    break;
+                case "Player":
+                    actor.TakeDamage(actor.maxHP, otherActor);
+                    otherActor.TakeDamage(3, actor);
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

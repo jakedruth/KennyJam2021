@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb329982b28a74d408ea37d8cdc2088a, type: 3}
-  m_Name: Astroid Data
+  m_Name: Asteroid_S_fastSpeed
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8414883457565874607, guid: 09bd5d49623296144bfc1155690805a0, type: 3}
+  prefab: {fileID: 2283489525551094145, guid: 4ea61f33c1da41144abbeb2b2d258fbf, type: 3}
   speedRange:
-    minimum: 0.2
-    maximum: 1
+    minimum: 5
+    maximum: 8
   angledOffsetRange:
-    minimum: -20
+    minimum: 10
     maximum: 20
-  addMirroredOffset: 0
-  addWeightsOnDestroyed: 0:1
+  addMirroredOffset: 1

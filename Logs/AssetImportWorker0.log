@@ -3007,3 +3007,839 @@ System memory in use after: 154.3 MB.
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 4130.
 Total: 2.550400 ms (FindLiveObjects: 0.361100 ms CreateObjectMapping: 0.130000 ms MarkObjects: 1.958600 ms  DeleteObjects: 0.100100 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 301.219659 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_M_slow.asset
+  artifactKey: Guid(8def65175e702934cb19010d0d38db16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_M_slow.asset using Guid(8def65175e702934cb19010d0d38db16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72dbeeedc6d2fd506e220567bc129107') in 0.022234 seconds
+  Import took 0.027194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.014670 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_M_slow 1.asset
+  artifactKey: Guid(a6ac3fc2aaa6f494ba12ca5f9ccc4501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_M_slow 1.asset using Guid(a6ac3fc2aaa6f494ba12ca5f9ccc4501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc67064bcb121cb7cdb0dd635676522') in 0.006496 seconds
+  Import took 0.014033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003469 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_M_slow 1.asset
+  artifactKey: Guid(a6ac3fc2aaa6f494ba12ca5f9ccc4501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_M_slow 1.asset using Guid(a6ac3fc2aaa6f494ba12ca5f9ccc4501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc67064bcb121cb7cdb0dd635676522') in 0.003050 seconds
+  Import took 0.008289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.429131 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_2S_fast.asset
+  artifactKey: Guid(a6ac3fc2aaa6f494ba12ca5f9ccc4501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_2S_fast.asset using Guid(a6ac3fc2aaa6f494ba12ca5f9ccc4501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '855316925e9f031038d38ff3848bdeef') in 0.006184 seconds
+  Import took 0.011135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.338792 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_M_slow.asset
+  artifactKey: Guid(8def65175e702934cb19010d0d38db16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_M_slow.asset using Guid(8def65175e702934cb19010d0d38db16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e6093f8bba3f92385ffcacec0ed084') in 0.004118 seconds
+  Import took 0.022642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.882139 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_1M_slow.asset
+  artifactKey: Guid(8def65175e702934cb19010d0d38db16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_1M_slow.asset using Guid(8def65175e702934cb19010d0d38db16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e93d5c3e287a994ec38c315446cca804') in 0.006005 seconds
+  Import took 0.038839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.820434 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_fast.asset
+  artifactKey: Guid(a6ac3fc2aaa6f494ba12ca5f9ccc4501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_fast.asset using Guid(a6ac3fc2aaa6f494ba12ca5f9ccc4501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f721d8dd36c338202a5fd4564a235ba5') in 0.006510 seconds
+  Import took 0.011114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.655473 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_mediumSpeed.asset
+  artifactKey: Guid(a6ac3fc2aaa6f494ba12ca5f9ccc4501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_mediumSpeed.asset using Guid(a6ac3fc2aaa6f494ba12ca5f9ccc4501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11b9a71324e1a60b898664ec1ba89bec') in 0.006169 seconds
+  Import took 0.082818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.795157 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_mediumSpeed.asset
+  artifactKey: Guid(a6ac3fc2aaa6f494ba12ca5f9ccc4501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_mediumSpeed.asset using Guid(a6ac3fc2aaa6f494ba12ca5f9ccc4501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f87ac9672cd2c4fe086c245b275b95e') in 0.003341 seconds
+  Import took 0.007832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.573715 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_mediumSpeed 1.asset
+  artifactKey: Guid(c245a5be171b4194cb713e86e48d6cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_mediumSpeed 1.asset using Guid(c245a5be171b4194cb713e86e48d6cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fb38b4095ae9c877f73ff6621ccc20a') in 0.006206 seconds
+  Import took 0.031641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001348 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_mediumSpeed 1.asset
+  artifactKey: Guid(c245a5be171b4194cb713e86e48d6cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_mediumSpeed 1.asset using Guid(c245a5be171b4194cb713e86e48d6cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fb38b4095ae9c877f73ff6621ccc20a') in 0.002992 seconds
+  Import took 0.007314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.874084 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_fastSpeed.asset
+  artifactKey: Guid(c245a5be171b4194cb713e86e48d6cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_fastSpeed.asset using Guid(c245a5be171b4194cb713e86e48d6cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e4b941eaeb167f34745fc9bfb2e104b') in 0.013040 seconds
+  Import took 0.023387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.644801 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_fastSpeed.asset
+  artifactKey: Guid(c245a5be171b4194cb713e86e48d6cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_fastSpeed.asset using Guid(c245a5be171b4194cb713e86e48d6cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '067d8d7081590e4263715d1903047e61') in 0.003583 seconds
+  Import took 0.008138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.998763 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/easy.asset
+  artifactKey: Guid(e626aa1bc88e37345a11903a1f80073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/easy.asset using Guid(e626aa1bc88e37345a11903a1f80073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5882625b1d60cc60f47c2ff53b6c308') in 0.006855 seconds
+  Import took 0.012089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.534232 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/easy 1.asset
+  artifactKey: Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/easy 1.asset using Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aadc23b707695c9b979503e45a9fa74') in 0.006461 seconds
+  Import took 0.010999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005318 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/easy 1.asset
+  artifactKey: Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/easy 1.asset using Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aadc23b707695c9b979503e45a9fa74') in 0.003498 seconds
+  Import took 0.007912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.713955 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/easy 2.asset
+  artifactKey: Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/easy 2.asset using Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9806dad9e63f5405be8b22c9c76a130') in 0.006604 seconds
+  Import took 0.011065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005060 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/easy 2.asset
+  artifactKey: Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/easy 2.asset using Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9806dad9e63f5405be8b22c9c76a130') in 0.003420 seconds
+  Import took 0.008067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.422222 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/slow_s.asset
+  artifactKey: Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/slow_s.asset using Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba33dae951b99d18738adb087ff8442') in 0.006622 seconds
+  Import took 0.013012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004046 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/slow_s.asset
+  artifactKey: Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/slow_s.asset using Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba33dae951b99d18738adb087ff8442') in 0.003682 seconds
+  Import took 0.008674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.043087 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/2AS_medium.asset
+  artifactKey: Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/2AS_medium.asset using Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd484c52d93b96e27d0bc8ed81fd565f8') in 0.006637 seconds
+  Import took 0.017376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.098092 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/2AS_mediumSpeed.asset
+  artifactKey: Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/2AS_mediumSpeed.asset using Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a9671da721cf358b2e65d0147d55bf3') in 0.006648 seconds
+  Import took 0.022367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.362286 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/2AS_mediumSpeed 1.asset
+  artifactKey: Guid(577f148e38212a240bf43a9e3d91e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/2AS_mediumSpeed 1.asset using Guid(577f148e38212a240bf43a9e3d91e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b272425ece226fb04f111530a20cfd') in 0.007169 seconds
+  Import took 0.011987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003985 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/2AS_mediumSpeed 1.asset
+  artifactKey: Guid(577f148e38212a240bf43a9e3d91e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/2AS_mediumSpeed 1.asset using Guid(577f148e38212a240bf43a9e3d91e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b272425ece226fb04f111530a20cfd') in 0.003746 seconds
+  Import took 0.008241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.466666 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/2AS_mediumSpeed.asset
+  artifactKey: Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/2AS_mediumSpeed.asset using Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '544362cb0bf109d158d9bffacc604d03') in 0.003588 seconds
+  Import took 0.007998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.312936 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/1AS_fastSpeed.asset
+  artifactKey: Guid(577f148e38212a240bf43a9e3d91e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/1AS_fastSpeed.asset using Guid(577f148e38212a240bf43a9e3d91e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'becd9cc1da1ce5ac437e61a82c3d7e83') in 0.006535 seconds
+  Import took 0.011117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.404309 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/easy.asset
+  artifactKey: Guid(e626aa1bc88e37345a11903a1f80073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/easy.asset using Guid(e626aa1bc88e37345a11903a1f80073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbfb2dc15bb83a4c639c285d2e6ccbf9') in 0.004578 seconds
+  Import took 0.009069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000769 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/easy.asset
+  artifactKey: Guid(e626aa1bc88e37345a11903a1f80073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/easy.asset using Guid(e626aa1bc88e37345a11903a1f80073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbfb2dc15bb83a4c639c285d2e6ccbf9') in 0.003559 seconds
+  Import took 0.008325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.023600 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/easy 1.asset
+  artifactKey: Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/easy 1.asset using Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a710d801c3e8033cfbf4b362e412f2e') in 0.003561 seconds
+  Import took 0.008578 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000885 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/easy 1.asset
+  artifactKey: Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/easy 1.asset using Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a710d801c3e8033cfbf4b362e412f2e') in 0.003473 seconds
+  Import took 0.007998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.862978 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/2AM.asset
+  artifactKey: Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/2AM.asset using Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '445fd5debf1fc485d652c4ff2902c8a8') in 0.006711 seconds
+  Import took 0.016133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.954011 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/1ASF.asset
+  artifactKey: Guid(577f148e38212a240bf43a9e3d91e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/1ASF.asset using Guid(577f148e38212a240bf43a9e3d91e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d18e910e305c727d53b8df4c5a3dc5') in 0.006288 seconds
+  Import took 0.010997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.031367 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/2ASM.asset
+  artifactKey: Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/2ASM.asset using Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56ac1fc686075d93feadd08daf6c72a1') in 0.006325 seconds
+  Import took 0.012650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.309125 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/2AMS.asset
+  artifactKey: Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/2AMS.asset using Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1c0fe2e84064769963c636e84112039') in 0.006982 seconds
+  Import took 0.014256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.337606 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/1AMS.asset
+  artifactKey: Guid(e626aa1bc88e37345a11903a1f80073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/1AMS.asset using Guid(e626aa1bc88e37345a11903a1f80073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be3933d7b138e6491ecda21869da627c') in 0.006385 seconds
+  Import took 0.010923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.430749 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/2AMS_1ASM.asset
+  artifactKey: Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/2AMS_1ASM.asset using Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa3bdf9f88426c6aaa070714cc6e3f27') in 0.006789 seconds
+  Import took 0.011547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.372291 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/2AMS_1ASM_2ASF.asset
+  artifactKey: Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/2AMS_1ASM_2ASF.asset using Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '804113f1ec735522b9f6ca8ccd09519c') in 0.007328 seconds
+  Import took 0.020842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 122.602534 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/2ASM.asset
+  artifactKey: Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/2ASM.asset using Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c4077c1125ac83221193f5860849c9') in 0.003791 seconds
+  Import took 0.015345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.777694 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/2ASM 1.asset
+  artifactKey: Guid(977388f8a20bda64192c1ceb82143d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/2ASM 1.asset using Guid(977388f8a20bda64192c1ceb82143d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0fbbddf2956064a387c319888fdadc') in 0.006477 seconds
+  Import took 0.021181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.831403 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/1ASM.asset
+  artifactKey: Guid(977388f8a20bda64192c1ceb82143d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/1ASM.asset using Guid(977388f8a20bda64192c1ceb82143d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b44c74e73c4096470dd16d95a0a2c185') in 0.007323 seconds
+  Import took 0.011719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.757994 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_fastSpeed.asset
+  artifactKey: Guid(c245a5be171b4194cb713e86e48d6cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_fastSpeed.asset using Guid(c245a5be171b4194cb713e86e48d6cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50210c1e0f9cea1c18a932241b7a303a') in 0.003933 seconds
+  Import took 0.009101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001027 seconds.
+  path: Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_fastSpeed.asset
+  artifactKey: Guid(c245a5be171b4194cb713e86e48d6cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/SpawnData/Asteroid_S_fastSpeed.asset using Guid(c245a5be171b4194cb713e86e48d6cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50210c1e0f9cea1c18a932241b7a303a') in 0.003476 seconds
+  Import took 0.007915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.829145 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/2AMS_1ASM_2ASF.asset
+  artifactKey: Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/2AMS_1ASM_2ASF.asset using Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf07d15d382b24854a4dc51f909fac6') in 0.005201 seconds
+  Import took 0.026291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.393968 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/asteroid_01.asset
+  artifactKey: Guid(977388f8a20bda64192c1ceb82143d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/asteroid_01.asset using Guid(977388f8a20bda64192c1ceb82143d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0ebad48b238472cf7be499f9ccf348') in 0.007554 seconds
+  Import took 0.028389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.829743 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/1AMS.asset
+  artifactKey: Guid(e626aa1bc88e37345a11903a1f80073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/1AMS.asset using Guid(e626aa1bc88e37345a11903a1f80073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e834a0733866053b63662ba8ab8fb0e1') in 0.003454 seconds
+  Import took 0.018078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.237861 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/asteroid_00.asset
+  artifactKey: Guid(e626aa1bc88e37345a11903a1f80073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/asteroid_00.asset using Guid(e626aa1bc88e37345a11903a1f80073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5c4213405f87015fed33658a8b804b') in 0.007030 seconds
+  Import took 0.017105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.823892 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/asteroid_02.asset
+  artifactKey: Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/asteroid_02.asset using Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da29bcef5df0b52ff338b638d1db98fa') in 0.007250 seconds
+  Import took 0.014174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004464 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/asteroid_02.asset
+  artifactKey: Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/asteroid_02.asset using Guid(e24687fe731e3e04e87a7380c4a6b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da29bcef5df0b52ff338b638d1db98fa') in 0.003692 seconds
+  Import took 0.008425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.096313 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/1ASF.asset
+  artifactKey: Guid(577f148e38212a240bf43a9e3d91e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/1ASF.asset using Guid(577f148e38212a240bf43a9e3d91e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b73ac79c49adfd562ba83812b62cd0c') in 0.003619 seconds
+  Import took 0.010813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.377107 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/asteroid_03.asset
+  artifactKey: Guid(577f148e38212a240bf43a9e3d91e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/asteroid_03.asset using Guid(577f148e38212a240bf43a9e3d91e59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ced36a453bab2ee1679b56a3dce9ace') in 0.006887 seconds
+  Import took 0.011799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.065358 seconds.
+  path: Assets/Resources/ScriptableObjects/WaveData/asteroid_04.asset
+  artifactKey: Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ScriptableObjects/WaveData/asteroid_04.asset using Guid(f9ec5c4a4bd168a4095cd236bf3da58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '235b81e2e44a29599988651569a06379') in 0.007204 seconds
+  Import took 0.011718 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001630 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.884 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2868 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.2 MB.
+System memory in use after: 154.3 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 4134.
+Total: 2.868800 ms (FindLiveObjects: 0.366900 ms CreateObjectMapping: 0.149000 ms MarkObjects: 2.238700 ms  DeleteObjects: 0.113300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 183.675105 seconds.
+  path: Assets/Scripts/Actor.cs
+  artifactKey: Guid(1baa6a74e8e512f48b80751cff62d52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Actor.cs using Guid(1baa6a74e8e512f48b80751cff62d52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '653e9d3bebd575e8b5023a8da616344c') in 0.009619 seconds
+  Import took 0.023112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007888 seconds.
+  path: Assets/Scripts/Actor.cs
+  artifactKey: Guid(1baa6a74e8e512f48b80751cff62d52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Actor.cs using Guid(1baa6a74e8e512f48b80751cff62d52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '653e9d3bebd575e8b5023a8da616344c') in 0.003423 seconds
+  Import took 0.008380 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001497 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.058 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2869 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.3 MB.
+System memory in use after: 154.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 4139.
+Total: 3.291700 ms (FindLiveObjects: 0.362300 ms CreateObjectMapping: 0.157800 ms MarkObjects: 2.649800 ms  DeleteObjects: 0.120800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1188.635531 seconds.
+  path: Assets/Scripts/Actor.cs
+  artifactKey: Guid(1baa6a74e8e512f48b80751cff62d52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Actor.cs using Guid(1baa6a74e8e512f48b80751cff62d52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5cbd5aa15e8727175d52e6fc9eab553') in 0.008594 seconds
+  Import took 0.027038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024507 seconds.
+  path: Assets/Scripts/Actor.cs
+  artifactKey: Guid(1baa6a74e8e512f48b80751cff62d52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Actor.cs using Guid(1baa6a74e8e512f48b80751cff62d52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5cbd5aa15e8727175d52e6fc9eab553') in 0.002574 seconds
+  Import took 0.007751 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001570 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.877 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2867 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.3 MB.
+System memory in use after: 154.4 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4141.
+Total: 2.521500 ms (FindLiveObjects: 0.330500 ms CreateObjectMapping: 0.136100 ms MarkObjects: 1.946100 ms  DeleteObjects: 0.108100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 136.152334 seconds.
+  path: Assets/Resources/Prefabs/Astroids/Asteroid_H.prefab
+  artifactKey: Guid(1a41bd3c8a421bb4fb3e57ea9a6dacd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Astroids/Asteroid_H.prefab using Guid(1a41bd3c8a421bb4fb3e57ea9a6dacd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ed8406bc16e7dc8b006041c8117cb6') in 0.165886 seconds
+  Import took 0.170665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.647284 seconds.
+  path: Assets/Resources/Prefabs/Astroids/Asteroid_M.prefab
+  artifactKey: Guid(09bd5d49623296144bfc1155690805a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Astroids/Asteroid_M.prefab using Guid(09bd5d49623296144bfc1155690805a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6198b078206b1fd12b949bc33a7d9119') in 0.012398 seconds
+  Import took 0.016838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.029579 seconds.
+  path: Assets/Resources/Prefabs/Astroids/Asteroid_S.prefab
+  artifactKey: Guid(4ea61f33c1da41144abbeb2b2d258fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Astroids/Asteroid_S.prefab using Guid(4ea61f33c1da41144abbeb2b2d258fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe96ba5b95f0299ff047023f450c35b') in 0.011452 seconds
+  Import took 0.016494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.806777 seconds.
+  path: Assets/Resources/Prefabs/Astroids/Asteroid_L.prefab
+  artifactKey: Guid(43b88c848d8da36428e13c174ac3fb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Astroids/Asteroid_L.prefab using Guid(43b88c848d8da36428e13c174ac3fb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb70bfe7103fd2beba468698db75b0b3') in 0.012665 seconds
+  Import took 0.017248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.878519 seconds.
+  path: Assets/Resources/Prefabs/Ships/Enemy_Ship_A.prefab
+  artifactKey: Guid(50a84f4f4b429734d9a8380520cdedd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Ships/Enemy_Ship_A.prefab using Guid(50a84f4f4b429734d9a8380520cdedd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79db05df4627a5ec2d8be629bb04302d') in 0.015542 seconds
+  Import took 0.020168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.698319 seconds.
+  path: Assets/Resources/Prefabs/Ships/Player.prefab
+  artifactKey: Guid(01dbc284e273808439d4083fa2c972dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Ships/Player.prefab using Guid(01dbc284e273808439d4083fa2c972dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f3aa5fbb6b903d3a77619d4f96e78da') in 0.018853 seconds
+  Import took 0.031185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001738 seconds.
+  path: Assets/Resources/Prefabs/Ships/Player.prefab
+  artifactKey: Guid(01dbc284e273808439d4083fa2c972dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Ships/Player.prefab using Guid(01dbc284e273808439d4083fa2c972dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f3aa5fbb6b903d3a77619d4f96e78da') in 0.009906 seconds
+  Import took 0.014823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.887373 seconds.
+  path: Assets/Resources/Prefabs/Ships/Player.prefab
+  artifactKey: Guid(01dbc284e273808439d4083fa2c972dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Ships/Player.prefab using Guid(01dbc284e273808439d4083fa2c972dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce21b4b747a9c19f6ec6ee03c9c09ea2') in 0.011533 seconds
+  Import took 0.029128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.137402 seconds.
+  path: Assets/Resources/Prefabs/Ships/Enemy_Ship_A.prefab
+  artifactKey: Guid(50a84f4f4b429734d9a8380520cdedd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Ships/Enemy_Ship_A.prefab using Guid(50a84f4f4b429734d9a8380520cdedd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aad32be66ae8979a07c8e06ada275f7a') in 0.011076 seconds
+  Import took 0.015728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 221.422401 seconds.
+  path: Assets/Resources/Prefabs/Astroids/Asteroid_S.prefab
+  artifactKey: Guid(4ea61f33c1da41144abbeb2b2d258fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Astroids/Asteroid_S.prefab using Guid(4ea61f33c1da41144abbeb2b2d258fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ec93de5e956a719ccbf22820c00a260') in 0.009024 seconds
+  Import took 0.013805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.727934 seconds.
+  path: Assets/Resources/Prefabs/Astroids/Asteroid_M.prefab
+  artifactKey: Guid(09bd5d49623296144bfc1155690805a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Astroids/Asteroid_M.prefab using Guid(09bd5d49623296144bfc1155690805a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa0803dc5c02d5904897249b64aadde') in 0.011772 seconds
+  Import took 0.016862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006644 seconds.
+  path: Assets/Resources/Prefabs/Astroids/Asteroid_M.prefab
+  artifactKey: Guid(09bd5d49623296144bfc1155690805a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Astroids/Asteroid_M.prefab using Guid(09bd5d49623296144bfc1155690805a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa0803dc5c02d5904897249b64aadde') in 0.009226 seconds
+  Import took 0.013706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.768128 seconds.
+  path: Assets/Resources/Prefabs/Astroids/Asteroid_L.prefab
+  artifactKey: Guid(43b88c848d8da36428e13c174ac3fb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Astroids/Asteroid_L.prefab using Guid(43b88c848d8da36428e13c174ac3fb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f4a3f0ed0dac4947a9800414eaa4354') in 0.009359 seconds
+  Import took 0.014025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.140816 seconds.
+  path: Assets/Resources/Prefabs/Astroids/Asteroid_H.prefab
+  artifactKey: Guid(1a41bd3c8a421bb4fb3e57ea9a6dacd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Astroids/Asteroid_H.prefab using Guid(1a41bd3c8a421bb4fb3e57ea9a6dacd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df202640c80a4d61f1c2957348539fc8') in 0.011956 seconds
+  Import took 0.030633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.231040 seconds.
+  path: Assets/Resources/Prefabs/Bullets/bullet_enemy.prefab
+  artifactKey: Guid(a6b306f53e24a144398814eb5ec2eded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Bullets/bullet_enemy.prefab using Guid(a6b306f53e24a144398814eb5ec2eded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '134679421e3e2955d425fc6ed35fb81d') in 0.012322 seconds
+  Import took 0.018616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001080 seconds.
+  path: Assets/Resources/Prefabs/Bullets/bullet_enemy.prefab
+  artifactKey: Guid(a6b306f53e24a144398814eb5ec2eded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Bullets/bullet_enemy.prefab using Guid(a6b306f53e24a144398814eb5ec2eded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '134679421e3e2955d425fc6ed35fb81d') in 0.007836 seconds
+  Import took 0.012180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.588800 seconds.
+  path: Assets/Resources/Prefabs/Bullets/bullet_player.prefab
+  artifactKey: Guid(cd58015650d81ea4aab5698c4b420de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Bullets/bullet_player.prefab using Guid(cd58015650d81ea4aab5698c4b420de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982677bb7f1225f857ad755efe69b99b') in 0.011398 seconds
+  Import took 0.026818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003106 seconds.
+  path: Assets/Resources/Prefabs/Bullets/bullet_player.prefab
+  artifactKey: Guid(cd58015650d81ea4aab5698c4b420de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Bullets/bullet_player.prefab using Guid(cd58015650d81ea4aab5698c4b420de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982677bb7f1225f857ad755efe69b99b') in 0.009598 seconds
+  Import took 0.014430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.709642 seconds.
+  path: Assets/Resources/Prefabs/Ships/Enemy_Ship_A.prefab
+  artifactKey: Guid(50a84f4f4b429734d9a8380520cdedd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Ships/Enemy_Ship_A.prefab using Guid(50a84f4f4b429734d9a8380520cdedd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28498bb25a151476c4cc5f9b714fc4b9') in 0.011796 seconds
+  Import took 0.016363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.671953 seconds.
+  path: Assets/Resources/Prefabs/Ships/Player.prefab
+  artifactKey: Guid(01dbc284e273808439d4083fa2c972dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Ships/Player.prefab using Guid(01dbc284e273808439d4083fa2c972dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d9128a216d6105c181fb517675eb053') in 0.013181 seconds
+  Import took 0.017799 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001779 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.901 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2867 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.4 MB.
+System memory in use after: 154.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 4181.
+Total: 2.609600 ms (FindLiveObjects: 0.362300 ms CreateObjectMapping: 0.134200 ms MarkObjects: 2.008500 ms  DeleteObjects: 0.103700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001630 seconds.
+Callback registration failed. Increase kMaxCallback.
+
+Fatal Error! Callback registration failed. Increase kMaxCallback.
+
+Crash!!!
+SymInit: Symbol-SearchPath: 'C:/Program Files/Unity/2020.3.4f1/Editor/Data/Mono;.;F:\Documents\UnityProjects\KennyJam2021;C:\Program Files\Unity\2020.3.4f1\Editor;C:\WINDOWS;C:\WINDOWS\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 534, UserName: 'jakedruth'
+OS-Version: 10.0.0
+C:\Program Files\Unity\2020.3.4f1\Editor\Unity.exe:Unity.exe (00007FF6F8C90000), size: 134725632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.4.47971
+C:\WINDOWS\SYSTEM32\ntdll.dll:ntdll.dll (00007FFE33AF0000), size: 2052096 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1110
+C:\WINDOWS\System32\KERNEL32.DLL:KERNEL32.DLL (00007FFE33890000), size: 774144 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\System32\KERNELBASE.dll:KERNELBASE.dll (00007FFE31650000), size: 2920448 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\System32\CRYPT32.dll:CRYPT32.dll (00007FFE31920000), size: 1437696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.844
+C:\WINDOWS\System32\ucrtbase.dll:ucrtbase.dll (00007FFE31470000), size: 1048576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.789
+C:\WINDOWS\System32\USER32.dll:USER32.dll (00007FFE336F0000), size: 1703936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\System32\win32u.dll:win32u.dll (00007FFE31220000), size: 139264 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\System32\GDI32.dll:GDI32.dll (00007FFE33420000), size: 172032 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\WINDOWS\System32\gdi32full.dll:gdi32full.dll (00007FFE31360000), size: 1093632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1110
+C:\WINDOWS\System32\msvcp_win.dll:msvcp_win.dll (00007FFE31A80000), size: 643072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.789
+C:\Program Files\Unity\2020.3.4f1\Editor\optix.6.0.0.dll:optix.6.0.0.dll (00007FFE220E0000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.0.0.0
+C:\WINDOWS\System32\ADVAPI32.dll:ADVAPI32.dll (00007FFE33200000), size: 704512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1052
+C:\WINDOWS\System32\msvcrt.dll:msvcrt.dll (00007FFE31DA0000), size: 647168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.19041.546
+C:\Program Files\Unity\2020.3.4f1\Editor\libfbxsdk.dll:libfbxsdk.dll (00007FFDC13D0000), size: 8974336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.0.0.0
+C:\Program Files\Unity\2020.3.4f1\Editor\OpenImageDenoise.dll:OpenImageDenoise.dll (00007FFDBC160000), size: 43806720 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\sechost.dll:sechost.dll (00007FFE33950000), size: 634880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\Program Files\Unity\2020.3.4f1\Editor\umbraoptimizer64.dll:umbraoptimizer64.dll (00007FFDE0280000), size: 1306624 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\RPCRT4.dll:RPCRT4.dll (00007FFE32740000), size: 1220608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\System32\WS2_32.dll:WS2_32.dll (00007FFE332B0000), size: 438272 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\Program Files\Unity\2020.3.4f1\Editor\FreeImage.dll:FreeImage.dll (0000000180000000), size: 6414336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.18.0.0
+C:\WINDOWS\System32\WLDAP32.dll:WLDAP32.dll (00007FFE33680000), size: 352256 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\SHELL32.dll:SHELL32.dll (00007FFE31F50000), size: 7598080 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\System32\SHLWAPI.dll:SHLWAPI.dll (00007FFE32D00000), size: 348160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\WINDOWS\System32\ole32.dll:ole32.dll (00007FFE32870000), size: 1220608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\WINDOWS\System32\combase.dll:combase.dll (00007FFE329A0000), size: 3493888 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\Program Files\Unity\2020.3.4f1\Editor\WinPixEventRuntime.dll:WinPixEventRuntime.dll (00007FFE2CF00000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.0.1812.6001
+C:\Program Files\Unity\2020.3.4f1\Editor\ispc_texcomp.dll:ispc_texcomp.dll (00007FFDE0030000), size: 1609728 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\Normaliz.dll:Normaliz.dll (00007FFE32D70000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\IMM32.dll:IMM32.dll (00007FFE33A80000), size: 196608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\SETUPAPI.dll:SETUPAPI.dll (00007FFE32D80000), size: 4661248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\System32\cfgmgr32.dll:cfgmgr32.dll (00007FFE31570000), size: 319488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\Program Files\Unity\2020.3.4f1\Editor\tbb.dll:tbb.dll (00007FFE19C30000), size: 413696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2017.0.2016.1004
+C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll:VCRUNTIME140.dll (00007FFE20280000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.29.30037.0
+C:\WINDOWS\System32\bcrypt.dll:bcrypt.dll (00007FFE31B20000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\WINDOWS\System32\OLEAUT32.dll:OLEAUT32.dll (00007FFE31CD0000), size: 839680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.985
+C:\WINDOWS\System32\WINTRUST.dll:WINTRUST.dll (00007FFE31300000), size: 393216 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\SYSTEM32\MSVCP140.dll:MSVCP140.dll (00007FFE201F0000), size: 577536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.29.30037.0
+C:\WINDOWS\SYSTEM32\GLU32.dll:GLU32.dll (00007FFE26860000), size: 180224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FFE30680000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFE0AA50000), size: 1200128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\MSVCP120.dll:MSVCP120.dll (00007FFE13A90000), size: 679936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.40649.5
+C:\WINDOWS\SYSTEM32\MSVCR120.dll:MSVCR120.dll (00007FFE10AF0000), size: 978944 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.40649.5
+C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL:CRYPTBASE.DLL (00007FFE30BF0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFE28740000), size: 1081344 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\SYSTEM32\WINMM.dll:WINMM.dll (00007FFE24170000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\HID.DLL:HID.DLL (00007FFE2FAE0000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\Program Files\Unity\2020.3.4f1\Editor\RadeonImageFilters.dll:RadeonImageFilters.dll (00007FFDC6230000), size: 2535424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.1.0
+C:\Program Files\Unity\2020.3.4f1\Editor\SketchUpAPI.dll:SketchUpAPI.dll (00007FFDC0B40000), size: 8978432 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 19.0.753.0
+C:\WINDOWS\SYSTEM32\VERSION.dll:VERSION.dll (00007FFE2A5B0000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\VCRUNTIME140_1.dll:VCRUNTIME140_1.dll (00007FFE201E0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.29.30037.0
+C:\WINDOWS\SYSTEM32\WSOCK32.dll:WSOCK32.dll (00007FFE2CEF0000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1
+C:\Program Files\Unity\2020.3.4f1\Editor\SketchUpCommonPreferences.dll:SketchUpCommonPreferences.dll (00007FFE20F10000), size: 483328 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 19.0.753.20342
+C:\WINDOWS\SYSTEM32\Secur32.dll:Secur32.dll (00007FFE147A0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\SSPICLI.DLL:SSPICLI.DLL (00007FFE310E0000), size: 200704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\Program Files\Unity\2020.3.4f1\Editor\OpenRL.dll:OpenRL.dll (00000246FCCE0000), size: 12779520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.0.2907
+C:\WINDOWS\SYSTEM32\MSVCR100.dll:MSVCR100.dll (000000006DA60000), size: 860160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
+C:\Program Files\Unity\2020.3.4f1\Editor\embree.dll:embree.dll (00007FFDBFB50000), size: 16711680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.14.0.0
+C:\WINDOWS\SYSTEM32\MSVCP100.dll:MSVCP100.dll (000000006D9C0000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
+C:\WINDOWS\SYSTEM32\MSWSOCK.DLL:MSWSOCK.DLL (00007FFE309E0000), size: 434176 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\Program Files\Unity\2020.3.4f1\Editor\OpenRL_pthread.dll:OpenRL_pthread.dll (00000246FD930000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.9.0.0
+C:\WINDOWS\SYSTEM32\MSASN1.dll:MSASN1.dll (00007FFE30E00000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\kernel.appcore.dll:kernel.appcore.dll (00007FFE2F150000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\bcryptPrimitives.dll:bcryptPrimitives.dll (00007FFE315C0000), size: 536576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\WINDOWS\system32\uxtheme.dll:uxtheme.dll (00007FFE2EC90000), size: 647168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\System32\shcore.dll:shcore.dll (00007FFE32690000), size: 712704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\WINDOWS\SYSTEM32\windows.storage.dll:windows.storage.dll (00007FFE2F350000), size: 7929856 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\SYSTEM32\Wldp.dll:Wldp.dll (00007FFE30C80000), size: 180224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.662
+C:\WINDOWS\SYSTEM32\profapi.dll:profapi.dll (00007FFE31160000), size: 126976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.844
+C:\WINDOWS\System32\clbcatq.dll:clbcatq.dll (00007FFE31E40000), size: 692224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2001.12.10941.16384
+C:\WINDOWS\System32\netprofm.dll:netprofm.dll (00007FFE2BFD0000), size: 253952 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\npmproxy.dll:npmproxy.dll (00007FFE29580000), size: 65536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\NSI.dll:NSI.dll (00007FFE336E0000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.610
+C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFE2A6C0000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFE2A6A0000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FFE306D0000), size: 835584 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\WINDOWS\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFE26ED0000), size: 520192 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FFE28BD0000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\d3d11.dll:d3d11.dll (00007FFE2CF90000), size: 2506752 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\WINDOWS\SYSTEM32\dxgi.dll:dxgi.dll (00007FFE2FB20000), size: 999424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.964
+C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_1108979a670abe46\nvldumdx.dll:nvldumdx.dll (00007FFE26710000), size: 1069056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 27.21.14.6663
+C:\WINDOWS\SYSTEM32\cryptnet.dll:cryptnet.dll (00007FFE29730000), size: 200704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\imagehlp.dll:imagehlp.dll (00007FFE33400000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (00007FFE30BD0000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\system32\rsaenh.dll:rsaenh.dll (00007FFE302F0000), size: 212992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1052
+C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_1108979a670abe46\nvwgf2umx.dll:nvwgf2umx.dll (00007FFDE9440000), size: 74567680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 27.21.14.6663
+C:\WINDOWS\system32\nvspcap64.dll:nvspcap64.dll (00007FFDE59B0000), size: 2895872 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.23.0.74
+C:\WINDOWS\SYSTEM32\ntmarta.dll:ntmarta.dll (00007FFE2FF20000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\dxcore.dll:dxcore.dll (00007FFE26B50000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\system32\wbem\wbemprox.dll:wbemprox.dll (00007FFE20B50000), size: 69632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\wbemcomn.dll:wbemcomn.dll (00007FFE20A90000), size: 598016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\system32\wbem\wbemsvc.dll:wbemsvc.dll (00007FFE1FED0000), size: 81920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\system32\wbem\fastprox.dll:fastprox.dll (00007FFE1FD20000), size: 1093632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\amsi.dll:amsi.dll (00007FFE187E0000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\WINDOWS\SYSTEM32\USERENV.dll:USERENV.dll (00007FFE31120000), size: 188416 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.572
+C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2107.4-0\MpOav.dll:MpOav.dll (00007FFE18750000), size: 495616 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 4.18.2107.4
+C:\Program Files\Unity\2020.3.4f1\Editor\cudart64_90.dll:cudart64_90.dll (00007FFDB9E80000), size: 397312 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.14.11.9000
+C:\WINDOWS\SYSTEM32\opencl.dll:opencl.dll (00007FFDB9D10000), size: 1462272 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.0.1.0
+C:\Program Files\Unity\2020.3.4f1\Editor\radeonrays.dll:radeonrays.dll (00007FFDB9C80000), size: 552960 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\2020.3.4f1\Editor\Data\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll:mono-2.0-bdwgc.dll (00007FFDB8F30000), size: 7790592 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\PSAPI.DLL:PSAPI.DLL (00007FFE32D60000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\ProgramData\Microsoft\VisualStudio\Setup\x64\Microsoft.VisualStudio.Setup.Configuration.Native.dll:Microsoft.VisualStudio.Setup.Configuration.Native.dll (00007FFDB9C30000), size: 327680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.7.3111.17308
+C:\WINDOWS\SYSTEM32\PROPSYS.dll:PROPSYS.dll (00007FFE2CCA0000), size: 1007616 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.19041.1023
+C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\comctl32.dll:comctl32.dll (00007FFE205D0000), size: 2727936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.10.19041.1110
+C:\WINDOWS\SYSTEM32\WindowsCodecs.dll:WindowsCodecs.dll (00007FFE2A170000), size: 1785856 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\Windows\System32\thumbcache.dll:thumbcache.dll (00007FFE25280000), size: 417792 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1151
+C:\Windows\System32\MrmCoreR.dll:MrmCoreR.dll (00007FFE265D0000), size: 1003520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\Windows\System32\iertutil.dll:iertutil.dll (00007FFE24430000), size: 2818048 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 11.0.19041.1081
+C:\WINDOWS\SYSTEM32\windows.staterepositorycore.dll:windows.staterepositorycore.dll (00007FFE20B30000), size: 69632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.844
+C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFE17300000), size: 1982464 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.867
+
+========== OUTPUTTING STACK TRACE ==================
+
+0x00007FFE31684ED9 (KERNELBASE) RaiseException
+0x00007FF6FB3B515D (Unity) EditorMonoConsole::LogToConsoleImplementation
+0x00007FF6FB3B60AA (Unity) EditorMonoConsole::LogToConsoleImplementation
+0x00007FF6FCF7184E (Unity) DebugStringToFilePostprocessedStacktrace
+0x00007FF6FCF70DFF (Unity) DebugStringToFile
+0x00007FF6F8EF3973 (Unity) CallbackArraySubBase<void (__cdecl*)(MemoryManager::AllocationLogDetails const & __ptr64)>::Register
+0x00007FF6FBB85539 (Unity) LoadDomainAndUserAssemblies
+0x00007FF6FBB859EE (Unity) LoadUserAssemblies
+0x00007FF6FBFBA1A8 (Unity) <lambda_79a3ebc38cb5166d44d10a16a21fca24>::operator()
+0x00007FF6FC0853A2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007FF6FC087500 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007FF6FC08AC8E (Unity) asio::io_service::run
+0x00007FF6FC000D10 (Unity) RunAssetImportWorkerClientV2
+0x00007FF6FC000D60 (Unity) RunAssetImporterV2
+0x00007FF6FB50D086 (Unity) Application::InitializeProject
+0x00007FF6FBE8D292 (Unity) WinMain
+0x00007FF6FDD05FC6 (Unity) __scrt_common_main_seh
+0x00007FFE338A7034 (KERNEL32) BaseThreadInitThunk
+0x00007FFE33B42651 (ntdll) RtlUserThreadStart
+
+========== END OF STACKTRACE ===========
+
+A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
+ * C:/Users/jaked/AppData/Local/Temp/Unity/Editor/Crashes

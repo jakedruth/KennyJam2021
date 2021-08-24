@@ -8,9 +8,9 @@ public class SpawnDataScriptableObject : ScriptableObject
     protected const float DEFAULT_SPAWN_DISTANCE = 20f;
 
     [Header("Base Spawn Data")]
-    public GameObject prefab;
+    public Actor prefab;
 
-    public virtual GameObject SpawnGameObject(SpawnManager manager, WaveDataScriptableObject waveData, Vector3 center, params object[] args)
+    public virtual Actor SpawnActor(SpawnManager manager, WaveDataScriptableObject waveData, Vector3 center, params object[] args)
     {
         // Calculate the spawn position and direction to center
         Vector3 spawnPosition = GetSpawnPosition(center, args);
@@ -22,8 +22,8 @@ public class SpawnDataScriptableObject : ScriptableObject
         Quaternion SpawnOrientation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         // Spawn the object
-        GameObject spawnedObject = (GameObject)Instantiate(prefab, spawnPosition, SpawnOrientation);
-        return spawnedObject;
+        Actor actor = Instantiate(prefab, spawnPosition, SpawnOrientation);
+        return actor;
     }
 
     public Vector3 GetSpawnPosition(Vector3 center, params object[] args)

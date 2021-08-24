@@ -18,20 +18,7 @@ public class StarFieldGenerator : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        foreach (StarFieldData data in _starFieldData)
-        {
-            // Draw each cell
-            for (int i = 0; i < data.parameter.gridDimension.x; i++)
-            {
-                for (int j = 0; j < data.parameter.gridDimension.y; j++)
-                {
-                    Vector3 position = data.bottomLeft + (data.parameter.cellSize * new Vector3(i, j, 0));
-                    Debug.DrawLine(position, position + Vector3.left, Color.red, Time.deltaTime, false);
-                }
-            }
-        }
-    }
+    { }
 
     private StarFieldData GenerateStarField(StarFieldParameter parameter)
     {

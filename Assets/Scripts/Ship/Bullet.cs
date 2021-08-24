@@ -5,10 +5,12 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed;
-    public float damage;
+    public int damage;
     public float range;
     private float _lifeTime;
     private float _time;
+
+    internal Actor _owner;
 
     private void Awake()
     {
@@ -33,16 +35,16 @@ public class Bullet : MonoBehaviour
         if (hit.collider != null)
         {
             Debug.Log($"[{name}]: Hit {hit.collider.name}");
+            Actor other = hit.collider.GetComponent<Actor>();
             switch (hit.collider.tag)
             {
                 case "Asteroid":
-                    FindObjectOfType<HUD>().AddScore(1);
-                    hit.collider.SendMessage("TakeDamage", damage);
+                    other.TakeDamage(damage, _owner);
                     Destroy(gameObject);
                     break;
                 case "Player":
                 case "Enemy":
-                    hit.collider.SendMessage("TakeDamage", damage);
+                    other.TakeDamage(damage, _owner);
                     Destroy(gameObject);
                     break;
                 default:
