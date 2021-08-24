@@ -4,7 +4,8 @@ using System.Xml;
 using UnityEditor;
 using UnityEngine;
 
-public class TextureAtlasSlicer : EditorWindow {
+public class TextureAtlasSlicer : EditorWindow
+{
     [MenuItem("CONTEXT/TextureImporter/Slice Sprite Using XML")]
     public static void SliceUsingXML(MenuCommand command)
     {
@@ -24,14 +25,14 @@ public class TextureAtlasSlicer : EditorWindow {
 
         //valid only if the texture type is 'sprite' or 'advanced'.
         return textureImporter && textureImporter.textureType == TextureImporterType.Sprite ||
-               textureImporter.textureType == TextureImporterType.Advanced;
+               textureImporter.textureType == TextureImporterType.Default;
     }
 
     public TextureImporter importer;
 
     public TextureAtlasSlicer()
     {
-        title = "Texture Atlas Slicer";
+        titleContent.text = "Texture Atlas Slicer";
     }
 
 
@@ -41,13 +42,15 @@ public class TextureAtlasSlicer : EditorWindow {
 
     public Vector2 customOffset = new Vector2(0.5f, 0.5f);
 
-    public void OnGUI() {
-        xmlAsset = EditorGUILayout.ObjectField("XML Source", xmlAsset, typeof (TextAsset), false) as TextAsset;
+    public void OnGUI()
+    {
+        xmlAsset = EditorGUILayout.ObjectField("XML Source", xmlAsset, typeof(TextAsset), false) as TextAsset;
 
-        spriteAlignment = (SpriteAlignment) EditorGUILayout.EnumPopup("Pivot", spriteAlignment);
+        spriteAlignment = (SpriteAlignment)EditorGUILayout.EnumPopup("Pivot", spriteAlignment);
 
         bool enabled = GUI.enabled;
-        if (spriteAlignment != SpriteAlignment.Custom) {
+        if (spriteAlignment != SpriteAlignment.Custom)
+        {
             GUI.enabled = false;
         }
 
@@ -55,11 +58,13 @@ public class TextureAtlasSlicer : EditorWindow {
 
         GUI.enabled = enabled;
 
-        if (xmlAsset == null) {
+        if (xmlAsset == null)
+        {
             GUI.enabled = false;
         }
 
-        if (GUILayout.Button("Slice")) {
+        if (GUILayout.Button("Slice"))
+        {
             PerformSlice();
         }
 
@@ -72,7 +77,8 @@ public class TextureAtlasSlicer : EditorWindow {
         document.LoadXml(xmlAsset.text);
 
         XmlElement root = document.DocumentElement;
-        if (root.Name == "TextureAtlas") {
+        if (root.Name == "TextureAtlas")
+        {
             bool failed = false;
 
             Texture2D texture = AssetDatabase.LoadMainAssetAtPath(importer.assetPath) as Texture2D;
@@ -82,8 +88,10 @@ public class TextureAtlasSlicer : EditorWindow {
 
             foreach (XmlNode childNode in root.ChildNodes)
             {
-                if (childNode.Name == "SubTexture") {
-                    try {
+                if (childNode.Name == "SubTexture")
+                {
+                    try
+                    {
                         int width = Convert.ToInt32(childNode.Attributes["width"].Value);
                         int height = Convert.ToInt32(childNode.Attributes["height"].Value);
                         int x = Convert.ToInt32(childNode.Attributes["x"].Value);
@@ -100,7 +108,8 @@ public class TextureAtlasSlicer : EditorWindow {
 
                         metaDataList.Add(spriteMetaData);
                     }
-                    catch (Exception exception) {
+                    catch (Exception exception)
+                    {
                         failed = true;
                         Debug.LogException(exception);
                     }
@@ -112,8 +121,9 @@ public class TextureAtlasSlicer : EditorWindow {
                 }
             }
 
-            if (!failed) {
-                importer.spriteImportMode = SpriteImportMode.Multiple; 
+            if (!failed)
+            {
+                importer.spriteImportMode = SpriteImportMode.Multiple;
                 importer.spritesheet = metaDataList.ToArray();
 
                 EditorUtility.SetDirty(importer);

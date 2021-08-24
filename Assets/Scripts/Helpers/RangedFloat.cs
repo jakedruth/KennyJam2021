@@ -15,11 +15,6 @@ public struct RangedFloat
         get { return (minimum + maximum) / 2; }
     }
 
-    public float GetRandomValue
-    {
-        get { return UnityEngine.Random.Range(minimum, maximum); }
-    }
-
     public float Sum
     {
         get { return maximum + minimum; }
@@ -29,10 +24,15 @@ public struct RangedFloat
     {
         get { return maximum - minimum; }
     }
-    
+
     public float Product
     {
         get { return minimum * maximum; }
+    }
+
+    public float GetRandomValue()
+    {
+        return UnityEngine.Random.Range(minimum, maximum);
     }
 
     public float Clamp(float value)

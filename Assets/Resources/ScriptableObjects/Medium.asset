@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 991b5afba6d5a78429463c57e17450ad, type: 3}
   m_Name: Medium
   m_EditorClassIdentifier: 
-  astroidPrefab: {fileID: 8414883457565874600, guid: 09bd5d49623296144bfc1155690805a0, type: 3}
+  astroidPrefab: {fileID: 7772821875944064577, guid: 4ea61f33c1da41144abbeb2b2d258fbf, type: 3}
   spawnCount: 2
   speedRange:
-    minimum: 1
-    maximum: 2
+    minimum: 1.5
+    maximum: 3
   spread: 35

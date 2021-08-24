@@ -63,6 +63,7 @@ public class StarFieldGenerator : MonoBehaviour
                 SpriteRenderer sr = star.AddComponent<SpriteRenderer>();
                 sr.sprite = parameter.starSprite;
                 sr.color = parameter.starColor.Evaluate(Random.Range(0, 1));
+                sr.sortingOrder = -15;
 
                 // Add the star to the data
                 data.stars.Add(star);

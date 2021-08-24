@@ -5,16 +5,18 @@ using UnityEngine.Events;
 
 public class PlayerShipController : MonoBehaviour
 {
+    public static PlayerShipController Instance;
+
     [Header("Required Transforms")]
     public Transform bulletSpawnPoint;
     public AudioSource fireAudioSource;
 
     [Header("Player Ship Properties")]
-    public float maxHP;
-    private float _currentHP;
+    public int maxHP;
+    public int currentHP { get; private set; }
 
-    public OnShipHitEvent onShipHitEvent { get; set; }
-    public OnShipDestroyedEvent onShipDestroyedEvent { get; set; }
+    public OnShipHitEvent onShipHitEvent { get; set; } = new OnShipHitEvent();
+    public OnShipDestroyedEvent onShipDestroyedEvent { get; set; } = new OnShipDestroyedEvent();
 
     [Header("Movement Variables")]
     public float angularVelocity;
@@ -22,15 +24,16 @@ public class PlayerShipController : MonoBehaviour
     public Vector3 turnPoint { get; private set; }
     private int _direction;
 
-    [Header("Shooting variables")]
+    [Header("Laser variables")]
     public KeyCode shootKey;
     public string bulletPrefab;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        Instance = this;
+
         // Set up intial health
-        _currentHP = maxHP;
+        currentHP = maxHP;
 
         // Set the initial direction
         _direction = -1;
@@ -67,14 +70,14 @@ public class PlayerShipController : MonoBehaviour
         turnPoint = transform.position + transform.right * _direction * turnRadius;
     }
 
-    public void TakeDamage(float amount)
+    public void TakeDamage(int amount)
     {
         // Handle damage
-        _currentHP -= amount;
+        currentHP -= amount;
         onShipHitEvent?.Invoke(this, amount);
 
         // If health is 0, destroy the object
-        if (_currentHP <= 0)
+        if (currentHP <= 0)
         {
             // Destroy the ship
             Destroy(gameObject);
@@ -97,5 +100,5 @@ public class PlayerShipController : MonoBehaviour
     }
 }
 
-public class OnShipDestroyedEvent : UnityEvent<PlayerShipController> { }
-public class OnShipHitEvent : UnityEvent<PlayerShipController, float> { }
+public class OnShipDestroyedEvent : UnityEvent<object> { }
+public class OnShipHitEvent : UnityEvent<object, int> { }
