@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Actor))]
+[RequireComponent(typeof(Ship))]
 public class EnemyShipController : MonoBehaviour
 {
     public Actor actor { get; private set; }
-
-    [Header("Required Transforms")]
-    public Transform bulletSpawnPoint;
-    public AudioSource fireAudioSource;
+    public Ship ship { get; private set; }
 
     [Header("Movement Variables")]
     public float speed;
@@ -22,7 +20,6 @@ public class EnemyShipController : MonoBehaviour
     private Vector2 _direction;
 
     [Header("Laser variables")]
-    public string bulletPrefab;
     public float fireRange;
     public float fireInterval;
     public int burstFireAmount;
@@ -34,7 +31,11 @@ public class EnemyShipController : MonoBehaviour
 
     private void Awake()
     {
+        // Get the actor and ship components
         actor = GetComponent<Actor>();
+        ship = GetComponent<Ship>();
+
+        // Add listeners
         actor.onActorDeath.AddListener((actor, sourceOfDeath) =>
         {
             Actor other = sourceOfDeath as Actor;
@@ -93,7 +94,7 @@ public class EnemyShipController : MonoBehaviour
             if (sqrDistance < fireRange * fireRange)
             {
                 // Check to see if the target is infront of the ship
-                float dotProdcut = Vector2.Dot(_direction, bulletSpawnPoint.up);
+                float dotProdcut = Vector2.Dot(_direction, ship.projectilSpawnPoint.up);
                 if (dotProdcut >= 0.5f)
                 {
                     // Start Firing
@@ -109,7 +110,7 @@ public class EnemyShipController : MonoBehaviour
             if (_burstFireCount > 0)
             {
                 // Fire a bullet
-                Fire();
+                ship.Fire();
                 _burstFireCount--;
                 _fireTimer = 0;
             }
@@ -118,14 +119,6 @@ public class EnemyShipController : MonoBehaviour
                 isFiring = false;
             }
         }
-    }
-
-    void Fire()
-    {
-        // Create a new bullet
-        Bullet bullet = Instantiate(Resources.Load<Bullet>($"Prefabs/Bullets/{bulletPrefab}"), bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        bullet._owner = actor;
-        fireAudioSource.PlayOneShot(fireAudioSource.clip);
     }
 
     private void OnCollisionEnter2D(Collision2D other)

@@ -4,14 +4,12 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Actor))]
+[RequireComponent(typeof(Ship))]
 public class PlayerShipController : MonoBehaviour
 {
     public static PlayerShipController Instance;
     public Actor actor { get; private set; }
-
-    [Header("Required Transforms")]
-    public Transform bulletSpawnPoint;
-    public AudioSource fireAudioSource;
+    public Ship ship { get; private set; }
 
     [Header("Movement Variables")]
     public float angularVelocity;
@@ -21,12 +19,17 @@ public class PlayerShipController : MonoBehaviour
 
     [Header("Laser variables")]
     public KeyCode shootKey;
-    public string bulletPrefab;
 
     void Awake()
     {
+        // Set the instance to this
         Instance = this;
+
+        // Get the actor and ship components
         actor = GetComponent<Actor>();
+        ship = GetComponent<Ship>();
+
+        // Setup actor settings
         actor.isPlayer = true;
 
         // Set the initial direction
@@ -43,17 +46,9 @@ public class PlayerShipController : MonoBehaviour
         // Handle Input
         if (Input.GetKeyDown(shootKey))
         {
-            Fire();
+            ship.Fire();
             ChangeDirection();
         }
-    }
-
-    void Fire()
-    {
-        // Create a new bullet
-        Bullet bullet = Instantiate(Resources.Load<Bullet>($"Prefabs/Bullets/{bulletPrefab}"), bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        bullet._owner = actor;
-        fireAudioSource.PlayOneShot(fireAudioSource.clip);
     }
 
     void ChangeDirection()
