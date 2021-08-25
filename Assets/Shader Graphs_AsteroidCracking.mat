@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_AsteroidCracking
+  m_Shader: {fileID: -6465566751694194690, guid: c0f1fa66d46932f4692022b1e8b9ea56, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_249bcf6737aa49b78bf5aab8249c2fb9:
+        m_Texture: {fileID: 2800000, guid: ddac4c5f35933964185b90f834d36f07, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_762a9858bf564336962c8fea1e402b3a:
+        m_Texture: {fileID: 2800000, guid: 74918dd369963ba42adf3214e94df1a0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CrackTexture:
+        m_Texture: {fileID: 2800000, guid: ddac4c5f35933964185b90f834d36f07, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 74918dd369963ba42adf3214e94df1a0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_2311395789d34dbc8d2808a2859dfc2c: 0
+    - Vector1_293fa81a5085404d88988e76c3ec6797: 2.23
+    - Vector1_a594e7b3c7234fbbbc6bf2d75168a28a: 3
+    - Vector1_bb9dd50f098b4c63b8242356ef667909: 1
+    - Vector1_d0411243a9f841fc902be784d88eb2fa: 0.01
+    - Vector1_dc464223028845a79bd42cbbc8c26b83: 0.1
+    - _CrackBlur: 0.01
+    - _CrackNoiseAmount: 0.1
+    - _CrackSeed: 0.1
+    - _CrackTiling: 3
+    - _CrackValue: 1
+    - _MultValue: 2.23
+    m_Colors: []
+  m_BuildTextureStacks: []
