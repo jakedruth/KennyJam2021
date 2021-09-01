@@ -32,12 +32,16 @@ public class Ship : MonoBehaviour
         fireAudioSource.PlayOneShot(fireAudioSource.clip);
     }
 
-    private void OnShipHit(Actor actor, Actor source)
+    private void OnShipHit(Actor a, Actor source)
     { }
 
-    private void OnShipDeath(Actor arg0, Actor arg1)
-    { }
+    private void OnShipDeath(Actor a, Actor source)
+    {
+        string explosionName = "ShipExplosion";
+        GameObject explosionPrefab = Resources.Load<GameObject>($"Prefabs/Ships/{explosionName}");
+        GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+    }
 
-    private void OnShipDestroyed(Actor arg0)
+    private void OnShipDestroyed(Actor a)
     { }
 }

@@ -10,6 +10,8 @@ public class Actor : MonoBehaviour
     public int maxHP;
     public int currentHP { get; private set; }
 
+    public float delayDestroyOnDeath;
+
     // public events
     public OnActorHitEvent onActorHit = new OnActorHitEvent();
     public OnActorDeathEvent onActorDeath = new OnActorDeathEvent();
@@ -18,6 +20,12 @@ public class Actor : MonoBehaviour
     private void Awake()
     {
         currentHP = maxHP;
+    }
+
+    [ContextMenu("Take Damage")]
+    public void Testing_TakeOneDamage()
+    {
+        TakeDamage(1);
     }
 
     public void TakeDamage(int amount, Actor source = null)
@@ -39,13 +47,18 @@ public class Actor : MonoBehaviour
         OnDeath(this);
     }
 
+    public void Despawn()
+    {
+        Destroy(gameObject);
+    }
+
     private void OnDeath(Actor source = null)
     {
         // Call OnDeathEvent
         onActorDeath?.Invoke(this, source);
 
         // Destroy the ship
-        Destroy(gameObject);
+        Destroy(gameObject, delayDestroyOnDeath);
     }
 
     public void Destroy()
